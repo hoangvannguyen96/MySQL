@@ -7,7 +7,7 @@ having max(credit)= all (select max(credit) from subject);
 
 select * from quanlysinhvien.subject
 where credit = (select max(credit) from subject);
-
+  
 select s.*,avg(mark) as avgmark 
 from student s
 join mark m on m.studentid=s.studentid
